@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Web Components</title>
-    <script src="tooltip.js"></script>
-  </head>
-  <body>
-    <my-tooltip></my-tooltip>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Web Components</title>
+  <style>
+    div {
+      border: 2px solid orange;
+    }
+  </style>
+  <script src="tooltip.js"></script>
+  <script src="confirm-link.js"></script>
+</head>
+
+<body>
+  <template id="tooltip-template">
+
+  </template>
+  <p>
+    <my-tooltip text="This is my text">AWESOME !</my-tooltip>
+  </p>
+  <my-tooltip text="This is my text">Here we go!</my-tooltip>
+  <div>No wc styles</div>
+  <a is="my-confirm-link" href="http://google.com">Google</a>
+
+</body>
+
 </html>
